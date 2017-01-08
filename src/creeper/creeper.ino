@@ -23,21 +23,21 @@ void setup() {
 }
 
 void loop(){
-  unsigned long timestamp = millis();
+  unsigned long timestamp = millis(); // 4 bytes
   Serial.print("t: ");
   Serial.println(timestamp);
 
-  int lightADC = analogRead(PHOTOCELL_PIN);
+  int lightADC = analogRead(PHOTOCELL_PIN); // 2 bytes
   Serial.print("L: ");
   Serial.println(lightADC);
 
-  float humidity = sensor.getRH();
+  float humidity = sensor.getRH(); // 4 bytes
   char humidityStr[16];
   dtostrf(humidity, 5, 2, humidityStr);
   Serial.print("H: ");
   Serial.println(humidityStr);
 
-  float tempf = sensor.getTempF();
+  float tempf = sensor.getTempF(); // 4 bytes
   char tempStr[16];
   dtostrf(tempf, 5, 2, tempStr);
   Serial.print("T: ");
