@@ -2,15 +2,13 @@
 
 void setup() {
   Serial.begin(9600);
-
-  // vw_set_ptt_inverted(true); // Required for DR3100
-  vw_set_rx_pin(12);
-  vw_setup(4000);  // Bits per sec
   pinMode(13, OUTPUT);
 
+  // vw_set_ptt_inverted(true);
+  vw_set_rx_pin(12);
+  vw_setup(4000); // bps
   // Start the receiver PLL running
   vw_rx_start();
-  Serial.println("server setup!!!!!!!");
 }
 
 void loop() {

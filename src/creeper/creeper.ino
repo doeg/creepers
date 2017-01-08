@@ -6,12 +6,10 @@ void setup() {
   Serial.begin(9600);
 
   pinMode(13,OUTPUT);
-  // vw_set_ptt_inverted(true); //
+
+  // vw_set_ptt_inverted(true);
   vw_set_tx_pin(12);
-
-  vw_setup(4000);// speed of data transfer Kbps'
-
-  Serial.println("clientSetup!!");
+  vw_setup(4000); // bps
 }
 
 void loop(){
