@@ -8,7 +8,8 @@ MONITOR_BAUDRATE = 9600
 ARDUINO_DIR = $(HOME)/Applications/Arduino.app/Contents/Java
 ARDMK_DIR = $(realpath ../../libraries/Arduino-Makefile)
 
-# ARDUINO_LIBS = MemoryFree Plantokei-Music SPI Adafruit-GFX-Library Adafruit-ST7735-Library
+ARDUINO_LIBS = VirtualWire Si7021 Wire
+#MemoryFree Plantokei-Music SPI Adafruit-GFX-Library Adafruit-ST7735-Library
 USER_LIB_PATH =  $(realpath ../../libraries)
 
 AVR_TOOLS_DIR = /usr/local
